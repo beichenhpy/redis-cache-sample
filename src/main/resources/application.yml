@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+spring:
+  redis:
+    host: 172.22.141.144
+    database: 1
+  cache:
+    redis:
+      key-prefix: 'beichenhpy:'
+    type: redis
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: beichenhpy
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
